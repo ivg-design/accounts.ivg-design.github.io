@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IVG Design Accounts - Clerk Auth</title>
+        <meta name="description" content="Authentication portal for IVG Design projects, powered by Clerk.">
+        <script async crossorigin="anonymous" data-clerk-publishable-key="pk_live_Y2xlcmsuaXZnLWRlc2lnbi5naXRodWIuaW8k"
+            src="https://clerk.ivg-design.github.io/npm/@clerk/clerk-js@5/dist/clerk.browser.js" type="text/javascript">
+            </script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+
+            .container {
+                background: rgba(255, 255, 255, 0.08);
+                border-radius: 20px;
+                padding: 2rem 2.5rem;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                max-width: 400px;
+                width: 100%;
+            }
+
+            h1 {
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+
+            .clerk-links {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .clerk-link {
+                color: #fff;
+                background: rgba(102, 126, 234, 0.2);
+                border: 1px solid rgba(102, 126, 234, 0.4);
+                border-radius: 12px;
+                padding: 0.75rem 1.5rem;
+                text-decoration: none;
+                font-size: 1.1rem;
+                transition: background 0.2s;
+            }
+
+            .clerk-link:hover {
+                background: rgba(102, 126, 234, 0.4);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>IVG Design Accounts</h1>
+            <!-- test test test testcomment -->
+            <p>Sign in, sign up, or manage your account for IVG Design projects.</p>
+            <div class="clerk-links">
+                <a class="clerk-link" href="/sign-in.html">🔐 Sign In</a>
+                <a class="clerk-link" href="/sign-up.html">✨ Sign Up</a>
+                <a class="clerk-link" href="/user.html">👤 User Profile</a>
+            </div>
+        </div>
+    </body>
+
+</html>
